@@ -57,8 +57,8 @@ def load_params():
     T_air, GHI, DHI, wind_speed = np.loadtxt(file, delimiter=",", skiprows=8, usecols=[6,13,15,21], unpack=True)
 
     param_uncl["T_air"] = T_air
-    param_uncl["GHI"] = GHI
-    param_uncl["DHI"] = DHI
+    param_uncl["GHI"] = GHI #W/m^2 #Global horizontal irradiance is the total solar radiation per unit area measured at a horizontal surface on the earth
+    param_uncl["DHI"] = DHI #W/m^2 #Diffuse horizontal irradiance (DIF or DHI) is the portion of solar radiation that reaches the earth indirectly
     param_uncl["wind_speed"] = wind_speed
 
     ################################################################
