@@ -35,8 +35,8 @@ def load_params():
     ################################################################
     # GENERAL PARAMETERS
 
-    param["c_w"] = 4.18  # kJ/(kgK)
-    param["rho_w"] = 1000  # kg/m3
+    param["c_w"] = 4.18  # kJ/(kgK) #spezifische Wärekapazität Wasser?
+    param["rho_w"] = 1000  # kg/m3 # Dichte von Wasser
 
     ################################################################
     # LOAD WEATHER DATA
